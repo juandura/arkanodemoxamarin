@@ -11,6 +11,9 @@ using ArkanoDemoApp.ViewModels;
 using static ArkanoDemoApp.ViewModels.LoginViewModel;
 using Java.IO;
 using Plugin.Media;
+using Microsoft.Azure.Mobile;
+using Microsoft.Azure.Mobile.Analytics;
+using Microsoft.Azure.Mobile.Crashes;
 
 namespace ArkanoDemoApp.Droid
 {
@@ -20,6 +23,9 @@ namespace ArkanoDemoApp.Droid
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
+
+            MobileCenter.Start("a9b966f7-0ae2-453d-bd10-c01510d56d32",
+                   typeof(Analytics), typeof(Crashes));
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
