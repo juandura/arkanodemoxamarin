@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<d:WaitingPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ArkanoDemoApp.Views.Login"
+             xmlns:d="clr-namespace:ArkanoDemoApp.Views;assembly=ArkanoDemoApp"
+             BackgroundColor="#ffffff">
+  <ScrollView>
+    <StackLayout Spacing="70" Padding="0,50,0,50" Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="FillAndExpand">
+      <Image Source="arkano.png" />
+      <StackLayout Orientation="Vertical" Spacing="20" VerticalOptions="FillAndExpand">
+        <StackLayout Orientation="Vertical" Spacing="0">
+          <Label Text="User:" Font="Normal, Large" TextColor="Black" />
+          <Entry Text="{Binding UserName}" TextColor="Black" Placeholder="Enter your mail here" />
+        </StackLayout>
+        <StackLayout Orientation="Vertical" Spacing="0">
+          <Label Text="Password:" Font="Normal, Large" TextColor="Black" />
+          <Entry Text="{Binding Password}" TextColor="Black" Placeholder="Enter your password here" IsPassword="True" />
+        </StackLayout>
+        <Button Text="Login" BackgroundColor="#2378a1" TextColor="White" Command="{Binding LoginCommand}" />
+      </StackLayout>
+      <Label Text="{Binding Version}" Font="Normal, Medium" TextColor="Black" HorizontalOptions="Center" />
+    </StackLayout>
+  </ScrollView>
+</d:WaitingPage>

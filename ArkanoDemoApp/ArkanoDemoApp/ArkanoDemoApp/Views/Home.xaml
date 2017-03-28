@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<d:WaitingPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ArkanoDemoApp.Views.Home"
+             xmlns:d="clr-namespace:ArkanoDemoApp.Views;assembly=ArkanoDemoApp"
+             BackgroundColor="#ffffff">
+  <ScrollView>
+    <StackLayout Spacing="80" Padding="0,50,0,50" Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="FillAndExpand">
+      <Image Source="arkano.png" />
+      <StackLayout Orientation="Vertical" Spacing="20" VerticalOptions="FillAndExpand">
+        <StackLayout Orientation="Vertical" Spacing="0">
+          <Label Text="User:" Font="Normal, Large" TextColor="Black" />
+          <Label Text="{Binding UserName}" Font="Normal, Large" TextColor="Black" />
+        </StackLayout>
+        <Button Text="Logout" BackgroundColor="#2378a1" TextColor="White" Command="{Binding LogoutCommand}" />
+
+        <!-- Loader -->
+        <ContentView BackgroundColor="Transparent"
+                    IsVisible="{Binding IsIndicatorActive}">
+          <ActivityIndicator VerticalOptions="Center"
+                             HorizontalOptions="Center"
+                             IsEnabled="{Binding IsIndicatorActive}"
+                             IsRunning="{Binding IsIndicatorActive}"
+                             IsVisible="{Binding IsIndicatorActive}" />
+        </ContentView>
+        
+      </StackLayout>
+    </StackLayout>
+  </ScrollView>
+</d:WaitingPage>
