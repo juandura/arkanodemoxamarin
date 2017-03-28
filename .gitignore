@@ -1,1 +1,11 @@
 /ArkanoDemoApp/.vs
+/.vs/VSWorkspaceState.json
+/ArkanoDemoApp/ArkanoDemoApp.UITest/bin/Release
+/ArkanoDemoApp/ArkanoDemoApp.UITest/obj/Release
+/ArkanoDemoApp/ArkanoDemoApp/ArkanoDemoApp.Droid/bin/Release
+/ArkanoDemoApp/ArkanoDemoApp/ArkanoDemoApp.Droid/obj/Release
+/ArkanoDemoApp/ArkanoDemoApp/ArkanoDemoApp.iOS/obj/iPhone/Release
+/ArkanoDemoApp/ArkanoDemoApp/ArkanoDemoApp/bin/Release
+/ArkanoDemoApp/ArkanoDemoApp/ArkanoDemoApp/obj/Release
+/ArkanoDemoApp/ArkanoDemoAppTest/bin/Release
+/ArkanoDemoApp/ArkanoDemoAppTest/obj/Release
